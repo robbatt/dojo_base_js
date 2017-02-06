@@ -1,0 +1,29 @@
+{
+  "name": "dojo_base_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter min --watch src/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbatt/dojo_base_js.git"
+  },
+  "keywords": [
+    "coding",
+    "dojo",
+    "js"
+  ],
+  "author": "Robert Brendler",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/robbatt/dojo_base_js/issues"
+  },
+  "homepage": "https://github.com/robbatt/dojo_base_js#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "mocha-cli": "^1.0.1"
+  }
+}
