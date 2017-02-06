@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter min --watch src/**/*.test.js"
+    "test": "jest",
+    "test2": "mocha --reporter min --watch src/**/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,22 @@
   "homepage": "https://github.com/robbatt/dojo_base_js#readme",
   "dependencies": {},
   "devDependencies": {
+    "jest": "^18.1.0",
     "mocha": "^3.2.0",
-    "mocha-cli": "^1.0.1"
+    "mocha-cli": "^1.0.1",
+    "systemjs": "^0.20.5",
+    "ts-jest": "^18.0.3",
+    "typescript": "^2.1.5"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
   }
 }
