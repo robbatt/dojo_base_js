@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter min --watch src/**/*.test.js"
+    "test": "mocha --reporter min src/**/*Test.js",
+    "loop-test": "mocha --reporter min --watch src/**/*Test.js",
+    "report": "istanbul cover _mocha -- -R spec src/**/*Test.js",
+    "loop-report": "scripts/loop-reports.sh",
+    "loop-win-report": "scripts/loop-reports.bat"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,7 @@
   "homepage": "https://github.com/robbatt/dojo_base_js#readme",
   "dependencies": {},
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "mocha-cli": "^1.0.1"
   }
