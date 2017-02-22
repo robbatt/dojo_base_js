@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter min src/**/*Test.js",
-    "loop-test": "mocha --reporter min --watch src/**/*Test.js",
-    "report": "istanbul cover _mocha -- -R spec src/**/*Test.js",
+    "test": "mocha --recursive --reporter min src",
+    "loop-test": "mocha --recursive --reporter min --watch src",
+    "report": "istanbul cover _mocha -- -R spec --recursive src",
     "loop-report": "scripts/loop-reports.sh",
     "loop-win-report": "scripts/loop-reports.bat"
   },
