@@ -4,7 +4,7 @@ const extended = require('./Extended');
 describe('Extended Test', function() {
     describe('# doIt()', function() {
         it('should return param unchanged', function() {
-            assert.equal(1, extended.doIt(1));
+            assert.equal(extended.doIt(1), 1);
         });
     });
 
@@ -16,8 +16,8 @@ describe('Extended Test', function() {
 
     describe('# doItPartiallyCovered()', function() {
         it('should be partially covered', function() {
-            assert.equal(0, extended.doItPartiallyCovered(0));
-            assert.equal(1, extended.doItPartiallyCovered(1));
+            assert.equal(extended.doItPartiallyCovered(0), 0);
+            assert.equal(extended.doItPartiallyCovered(1), 1);
         });
     });
 
