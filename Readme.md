@@ -2,8 +2,11 @@
 
 ## setup
 * install nodejs 6+ LTS ([manual](https://nodejs.org/en/))
-* run `npm install` in project root
 * **Windows:** you might have to add `%APPDATA%\npm` to your `PATH`
+* run `npm install mocha chai ts-node typings -g` anywhere
+* run `typings install dt~mocha --global --save` anywhere
+* run `npm install` in project root
+* run `typings install` in project root
 
 ## test
 * `npm test` runs all unit tests under `src`

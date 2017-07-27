@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive --reporter min src",
-    "loop-test": "mocha --recursive --reporter min --watch src",
-    "report": "istanbul cover _mocha -- -R spec --recursive src",
+    "test": "mocha --recursive --reporter min -r ts-node/register src",
+    "loop-test": "mocha --recursive --reporter min -r ts-node/register --watch src",
+    "report": "istanbul cover _mocha -- -R spec --recursive -r ts-node/register src",
     "loop-report": "scripts/loop-reports.sh",
     "loop-win-report": "scripts/loop-reports.bat"
   },
@@ -27,8 +27,13 @@
   "homepage": "https://github.com/robbatt/dojo_base_js#readme",
   "dependencies": {},
   "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.1.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.2.0",
-    "mocha-cli": "^1.0.1"
+    "mocha": "^3.4.2",
+    "mocha-cli": "^1.0.1",
+    "ts-node": "^3.3.0",
+    "typings": "^2.1.1"
   }
 }
